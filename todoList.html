@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "todoList.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <title>Todo List</title>
+ 
+
+</head>
+
+<body>
+
+<div id="edge">
+
+    <h4> TODO LİST </h4>
+
+    <hr>
+
+    <div id="edge2">
+    <input type="text" id="todoText" placeholder="todo text">
+
+    <hr>
+
+    <button id="btnAddAppend">Liste Sonuna Ekle</button>
+    <button id="btnAddPrepend">Liste Başına Ekle</button>
+    <!-- <button id="clearVisibleLastItems">Clear Visible Last İtems</button> -->
+    
+
+    <hr>
+
+
+</div>
+    <ul id="todoList">
+       
+
+
+    </ul>
+
+    <hr>
+
+<button id="clearAllItems">Clear All Items</button>
+
+</div>
+    <script>
+
+        
+
+
+        // $("#clearVisibleLastItems").click(function () {
+        //     $(".item:visible:last").hide(500);
+        // });
+        
+        
+       
+
+
+
+        $("#btnAddAppend").click(function () {
+            var li = $("<li class='item'></li>");
+            li.text($("#todoText").val());
+           
+
+            $("#todoList").append(li);
+
+           hideItem();
+          
+
+        });
+
+
+        $("#btnAddPrepend").click(function () {
+            var li = $("<li class='item'></li>");
+            li.text($("#todoText").val());
+
+            $("#todoList").prepend(li);
+
+            hideItem();
+          
+        });
+
+
+        $("#clearAllItems").click(function () {
+            $(".item").hide(500);
+        });
+
+
+                function hideItem() {
+    
+            $("#todoList li").click(function () {
+                $(this).hide(500);
+
+                console.log("çalıştı")
+            });
+};
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

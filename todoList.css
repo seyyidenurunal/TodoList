@@ -1,0 +1,71 @@
+
+
+body {
+
+    background-color: rgb(54, 88, 81);
+    margin: 10px auto;
+    min-width: 250px;
+    max-width: 50%;
+
+  }
+
+
+
+  
+  #todoList {
+
+      
+    border: 0px solid rgb(52, 109, 109);
+    background-color: rgb(163, 196, 180);
+    padding: 130px;
+    margin: 4px;
+    width: 500px;
+    height: 150px;
+    text-shadow: 0 0 1px rgb(52, 109, 109);
+    margin-left: 30px;
+    
+}
+
+  #edge {
+
+    margin-top: 50px;
+
+
+  }
+  
+
+  #edge2 {
+text-align: center ;  }
+
+  h4 {
+
+     margin:-17%;
+    padding:19%; 
+    text-align: center;
+    color:  rgb(163, 196, 180);
+
+    
+  }
+
+  #clearAllItems {
+      text-align: center;
+  }
+
+  button {
+
+    background-color:rgb(163, 196, 180) ;
+    color: rgb(54, 88, 81) ;
+  }
+
+  input {
+      background-color: rgb(163, 196, 180) ;
+  }
+.item {
+
+  list-style-type: none;
+  color: rgb(52, 109, 109);
+    
+
+  }
+
+  
